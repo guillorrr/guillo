@@ -1,12 +1,30 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroSection from "@/components/HeroSection";
+import ExpertiseSection from "@/components/ExpertiseSection";
+import ArchitectureSection from "@/components/ArchitectureSection";
+import FeaturedProject from "@/components/FeaturedProject";
+import BroughtInFor from "@/components/BroughtInFor";
+import ContactSection from "@/components/ContactSection";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <HeroSection />
+      <div className="line-accent max-w-6xl mx-auto" />
+      <ExpertiseSection />
+      <div className="line-accent max-w-6xl mx-auto" />
+      <ArchitectureSection />
+      <div className="line-accent max-w-6xl mx-auto" />
+      <FeaturedProject />
+      <div className="line-accent max-w-6xl mx-auto" />
+      <BroughtInFor />
+      <div className="line-accent max-w-6xl mx-auto" />
+      <ContactSection />
+
+      <footer className="py-10 px-6 text-center">
+        <p className="text-dim text-sm font-mono">
+          © {new Date().getFullYear()} Guillermo Baron · guillo.dev
+        </p>
+      </footer>
     </div>
   );
 };
