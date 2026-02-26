@@ -11,7 +11,7 @@ const items = [
 
 const BroughtInFor = () => {
   return (
-    <section className="py-24 px-6">
+    <section className="py-16 sm:py-24 px-4 sm:px-6">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -19,10 +19,10 @@ const BroughtInFor = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <p className="font-mono text-text-accent text-sm tracking-widest uppercase mb-3">
+          <p className="font-mono text-text-accent text-xs sm:text-sm tracking-widest uppercase mb-3">
             Use Cases
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-10">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight mb-8 sm:mb-10">
             What I'm Usually Brought In For
           </h2>
         </motion.div>
@@ -35,10 +35,10 @@ const BroughtInFor = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
-              className="flex items-center gap-4 py-5 border-b border-border group"
+              className="flex items-center gap-3 sm:gap-4 py-4 sm:py-5 border-b border-border group"
             >
-              <ArrowRight className="w-4 h-4 text-primary opacity-0 group-hover:opacity-100 transition-opacity" />
-              <span className="text-lg text-foreground">{item}</span>
+              <ArrowRight className="w-4 h-4 text-primary opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
+              <span className="text-base sm:text-lg text-foreground">{item}</span>
             </motion.div>
           ))}
         </div>
