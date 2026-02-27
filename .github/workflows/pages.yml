@@ -30,7 +30,7 @@ jobs:
         run: bun install
 
       - name: Build
-        run: VITE_BASE_PATH="/guillo/" bun run build
+        run: VITE_BASE_PATH="/" bun run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
